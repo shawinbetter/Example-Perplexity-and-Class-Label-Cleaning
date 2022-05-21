@@ -1,0 +1,20 @@
+
+# set up virual environment
+python3 -m venv env
+
+# use the existed packages in the system
+nano .chsrc_user
+
+set JAVA_HOME=/usr/local/packages/j2se-14.0.1
+source /usr/local/packages/python/setup/tensorflow-2.2.cshrc
+source /usr/local/packages/python/setup/pytorch-0.4.1.cshrc
+source /usr/local/packages/python/setup/mxnet-1.2.0.cshrc
+source /usr/local/packages/python/setup/opencv-4.0.0.cshrc
+source /usr/local/packages/python/setup/matplotlib-3.1.1.cshrc
+# change the directory correspondingly
+alias pip /home/data/wxieai/env/bin/pip
+
+
+# activate the enviroment
+# source /home/data/wxieai/env/bin/activate.csh
+# source  /home/data/wxieai/.chsrc_user
